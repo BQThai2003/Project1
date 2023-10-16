@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="../login-register/register.php" method="post">
+            <input type="text" placeholder="Username" name="userName" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="date" placeholder="Date" name="date" required>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+            </div>
+            <input type="email" placeholder="Email" name="email" required>
+            <label for="role">Role:</label>
+            <div class="radio-group">
+                <input type="radio" id="guest" name="role" value="Guest" required>
+                <label for="guest">Guest</label>
+                <input type="radio" id="author" name="role" value="Author" required>
+                <label for="author">Author</label>
+                <input type="radio" id="admin" name="role" value="Admin" required>
+                <label for="admin">Admin</label>
+            </div>
+            <input type="text" placeholder="Phone Number" name="phoneNumber" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="../html/login.html">Login</a></p>
+    </div>
+</body>
+</html>
